@@ -52,7 +52,7 @@ This setting process is based on [Here](https://www.lightsaml.com/SP-Bundle/Gett
     }
     public function refreshUser(UserInterface $user)
     {
-        // edit to throw not found exception
+        // return user object
         return $user;
     }
     ```
