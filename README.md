@@ -73,6 +73,7 @@ This setting process is based on [Here](https://www.lightsaml.com/SP-Bundle/Gett
                 path: /logout
 
     access_control:
+        # add path to your security routes
         - { path: ^/secure, roles: ROLE_USER }
     ```
 
