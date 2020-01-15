@@ -7,7 +7,7 @@ This setting process is based on [Here](https://www.lightsaml.com/SP-Bundle/Gett
 
 1. Run docker image
 
-    `$ docker run -i -t -p 8000:8000 tesao/lightsaml_for_symfony4 /bin/bash`
+    `$ docker run -i -t -p 8000:8000 tessai99/lightsaml_for_symfony4 /bin/bash`
 
 2. Setup configuration for lightSAML
 
