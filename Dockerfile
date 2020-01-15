@@ -8,9 +8,9 @@ MAINTAINER Tesao
 ENV APPDIR /proj
 
 # install packages
-RUN yum -y upgrade
-RUN yum -y install wget zip unzip nginx emacs
-RUN yum -y install php php-common php-json php-xml php-pdo git
+RUN dnf -y update
+RUN dnf -y install wget zip unzip nginx emacs
+RUN dnf -y install php php-common php-json php-xml php-pdo git
 
 # add user
 RUN useradd _www
