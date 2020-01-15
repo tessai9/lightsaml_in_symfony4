@@ -87,7 +87,7 @@ This setting process is based on [Here](https://www.lightsaml.com/SP-Bundle/Gett
         path: /logout
     ```
 
-3. That's all! Start server and access to `/saml/login` to start authentication!
+3. That's all! Execute `$ symfony server:start` and access to `http://localhost:8000/saml/login` to start authentication!
 
     if you want to more configuration about lightSAML, access [here](https://www.lightsaml.com/SP-Bundle/)!
 
