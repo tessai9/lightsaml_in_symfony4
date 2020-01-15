@@ -3,7 +3,8 @@ Docker image of Symfony4 with lightSAML(SP) based on CentOS8
 
 # How to start
 
-This setting process is based on [Here](https://www.lightsaml.com/SP-Bundle/Getting-started/), but not saving to database.
+There needs some settings to start SAML authentication.
+This setting process is based on [lightSAML - Getting-started](https://www.lightsaml.com/SP-Bundle/Getting-started/), but not saving on database.
 
 1. Run docker image
 
@@ -11,7 +12,7 @@ This setting process is based on [Here](https://www.lightsaml.com/SP-Bundle/Gett
 
 2. Setup configuration for lightSAML
 
-    1. Make user entity and user provider
+    1. Make user object and user provider
 
     ```bash
     [root@c4cb8a0f30c5 proj] php bin/console make:user
@@ -73,7 +74,7 @@ This setting process is based on [Here](https://www.lightsaml.com/SP-Bundle/Gett
                 path: /logout
 
     access_control:
-        # add path to your security routes
+        # add route to your secure page
         - { path: ^/secure, roles: ROLE_USER }
     ```
 
@@ -87,7 +88,7 @@ This setting process is based on [Here](https://www.lightsaml.com/SP-Bundle/Gett
         path: /logout
     ```
 
-3. That's all! Execute `$ symfony server:start` and access to `http://localhost:8000/saml/login` to start authentication!
+3. That's all! Execute `symfony server:start` and access to `http://localhost:8000/saml/login` to start authentication!
 
     if you want to more configuration about lightSAML, access [here](https://www.lightsaml.com/SP-Bundle/)!
 
